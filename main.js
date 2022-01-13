@@ -12,39 +12,189 @@ const displayDate = () => {
 
   document.getElementById("display-element").innerHTML = currentDate;
 }
- 
+
 
 // Write a JavaScript program to convert a number to a string.
+// .toString() returns a number as a string.
+let a = 15;
+a.toString();
+console.log(a) // practice 1 using let and letter ('let' identifer that may be reassigned)
 
+let hello = 20;
+hello.toString();
+console.log(hello) // practice 2 using let and word
+
+const displayString = () => {
+  const b = 25;
+  b.toString();
+  document.getElementById('demo').innerHTML = b;
+} // practice 3 using const and onclick button ('const' identifer that won't be reassigned)
 
 
 // Write a JavaScript program to convert a string to the number.
+//parseInt() function, which parses a string and returns an integer 
+// know the differences between string – a string literal to be parsed; radix – an integer between 2 and 36.
+let x = parseInt(10, 2);
+console.log(x)
+// practice 1 using let
+
+const y = '8';
+console.log(parseInt(y, 10));
+// expected output: 8 
+// practice 2 using const 
+
+const displayNum = () => {
+  const z = '100';
+  parseInt(50.25, 100, );
+  document.getElementById('demo2').innerHTML = z;
+}
+// practice 3 using const and onclick button
+
+
 
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-  // * Boolean
-  // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
-  
+// * Boolean
+// * Null
+// * Undefined
+// * Number
+// * NaN
+// * String
+const dataType = (car) => {
+  return typeof car;
+}
 
-  
+let carRun = true
+console.log(dataType(true))
+// boolean
+
+const walk = null
+console.log(walk)
+
+let miles = 50;
+console.log(dataType(miles))
+// number
+
+let carColor;
+console.log(dataType(carColor))
+// undefined
+
+function myCar(f) {
+  if (isNaN(f)) {
+    return NaN;
+  }
+  return f;
+}
+console.log(myCar('NotANumber'))
+// NaN
+
+
+let vechicle = 'van, suv, truck';
+console.log(dataType(vechicle))
+// string
+
+
+
 // Write a JavaScript program that adds 2 numbers together.
+let num1 = 5;
+let num2 = 1;
+let sum = num1 + num2;
+console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);
+// practice 1 adding 2 numbers 
 
+const displaySum = () => {
+  let number1 = 5;
+  let number2 = 2;
+  let thesum = number1 + number2;
+  document.getElementById('demo3').innerHTML = thesum;
+} // practice 2 adding 2 numbers onclick button
 
+function add_number() {
+
+  let first_number = parseInt(document.getElementById("Text1").value);
+  let second_number = parseInt(document.getElementById("Text2").value);
+  let result = first_number + second_number;
+
+  document.getElementById('txtresult').value = result;
+} // practice 3 user input 2 numbers using function
 
 // Write a JavaScript program that runs only when 2 things are true.
+const trueNum = (ab) => {
+  if (ab > 0 && ab < 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(trueNum(6));
 
+function display_function() {
+  alert(true_num(1));
+}
+
+const true_num = (xy) => {
+  if (xy > 0 && xy < 10) {
+    return true;
+  } else {
+    return false;
+  }
+
+}
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const trueNum1 = (a) => {
+  if (a > 0 || a < 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(trueNum1(3));
+
+function display_function1() {
+  alert(true_num1(9));
+}
+const true_num1 = (a) => {
+  if (a > 0 || a < 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 
-// Write a JavaScript program that runs when both things are not true.  
+
+
+
+// Write a JavaScript program that runs when both things are not true.
+const falseNum = (a) => {
+  if (a > 0 && a < 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(falseNum(15));
+
+
+function display_function2() {
+  alert(false_num(-7));
+}
+const false_num = (a) => {
+  if (a > 0 && a < 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
 
 // ***************************
 //         PART TWO
