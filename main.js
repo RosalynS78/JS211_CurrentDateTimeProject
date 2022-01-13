@@ -65,14 +65,12 @@ const dataType = (car) => {
   return typeof car;
 }
 
-
-
 let carRun = true
 console.log(dataType(true))
 // boolean
 
 const displayOperator3 = () => {
-  const itemThree =  true
+  const itemThree = true
   document.getElementById('item3').innerHTML = (typeof itemThree);
 }
 // boolean & button
@@ -81,11 +79,9 @@ const walk = null
 console.log(walk)
 // null
 
-
-
 const displayOperator = () => {
-const itemOne = 0
-document.getElementById('item1').innerHTML = (typeof itemOne);
+  const itemOne = 0
+  document.getElementById('item1').innerHTML = (typeof itemOne);
 
 }
 //number & button
@@ -102,8 +98,8 @@ const displayOperator2 = () => {
   const itemTwo = ' '
   document.getElementById('item2').innerHTML = (typeof undefined);
 
-  }
- //undefined & button 
+}
+//undefined & button 
 
 function myCar(f) {
   if (isNaN(f)) {
@@ -122,9 +118,9 @@ console.log(dataType(vechicle))
 const displayOperator4 = () => {
   const itemFour = 'cat, dog, hamster'
   document.getElementById('item4').innerHTML = (typeof itemFour);
-  
-  }
-  // string & button
+
+}
+// string & button
 
 
 
